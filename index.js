@@ -24,7 +24,7 @@ app.use("/auth", loginRoutes);
 app.use("/turf", authenticateToken, TurfRoute);
 app.use("/book", authenticateToken, BookingRoute);
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello hiisdss!");
 });
 const connection = async () => {
