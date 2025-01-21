@@ -1,6 +1,7 @@
 import { generateAuthToken } from "../auth/authController.js";
 import User from "../model/User.js";
-const bcrypt = require('bcryptjs');
+import bcrypt from 'bcryptjs';
+
 
 
 const loginController = async (req, res) => {
