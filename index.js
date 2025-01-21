@@ -25,7 +25,7 @@ app.use("/turf", authenticateToken, TurfRoute);
 app.use("/book", authenticateToken, BookingRoute);
 
 app.use("/", (req, res) => {
-  res.send("Hello hii!");
+  res.send("Hello hiisdss!");
 });
 const connection = async () => {
   try {
