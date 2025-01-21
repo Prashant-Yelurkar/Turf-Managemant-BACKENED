@@ -1,5 +1,5 @@
 import { generateAuthToken } from "../auth/authController.js";
-import User from "../model/user.js";
+import User from "../model/User.js";
 import bcrypt from "bcrypt";
 
 const loginController = async (req, res) => {
