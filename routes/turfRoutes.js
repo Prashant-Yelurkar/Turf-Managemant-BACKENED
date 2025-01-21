@@ -15,13 +15,13 @@ router.get('/bookings', checkAdmin, async (req, res) => {
     try {
         const bookings = await Booking.find();
 
-        console.log('Bookings without populate:', bookings); // Logs the raw bookings data
+        console.log('Bookings without populate:', bookings);
 
         const populatedBookings = await Booking.find()
             .populate('user_id', 'email');
 
 
-        console.log('Bookings with populated user data:', populatedBookings); // Logs populated data
+        console.log('Bookings with populated user data:', populatedBookings);
 
         return res.status(200).json({ data: populatedBookings });
     } catch (error) {
