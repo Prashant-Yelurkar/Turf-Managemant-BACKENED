@@ -2,7 +2,7 @@ import express from "express";
 import turfController from "../controllers/turfController.js"
 import checkAdmin from '../auth/adminMiddleware.js';
 import Booking from "../model/Booking.js";
-import User from "../model/user.js";
+import User from "../model/User.js";
 
 const router = express.Router();
 
