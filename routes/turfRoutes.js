@@ -18,7 +18,9 @@ router.get('/bookings', checkAdmin, async (req, res) => {
         console.log('Bookings without populate:', bookings);
 
         const populatedBookings = await Booking.find()
-            .populate('user_id', 'email');
+            .populate('user_id', 'email')
+            .populate('turf_id', 'name location price');
+
 
 
         console.log('Bookings with populated user data:', populatedBookings);
