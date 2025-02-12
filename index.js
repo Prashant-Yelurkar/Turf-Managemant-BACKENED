@@ -31,8 +31,8 @@ const connection = async () => {
   try {
     connectDB(process.env.MONGODB_URI)
       .then(() =>
-        app.listen(3001, function () {
-          console.log("Example app listening on port 3001!");
+        app.listen(3002, function () {
+          console.log("Example app listening on port 3002!");
         })
       )
       .catch((error) => console.log(error));

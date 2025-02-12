@@ -62,6 +62,7 @@ const loginController = async (req, res) => {
 
     return res.status(201).send({
       data: {
+        role: user.role,
         success: true,
         token: token,
       }
